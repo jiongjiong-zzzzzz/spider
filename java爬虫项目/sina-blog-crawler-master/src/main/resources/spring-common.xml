@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <context:component-scan base-package="com.zxs.ssh.template.model"/>
+    <context:component-scan base-package="com.zxs.ssh.template.dao"/>
+    <context:component-scan base-package="com.zxs.ssh.template.service"/>
+
+    <task:scheduler id="scheduler" pool-size="1"/>
+    <task:annotation-driven scheduler="scheduler"/>
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+                <value>classpath:pool.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="mysql-DS"
+          class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="user" value="${mysql.username}"/>
+        <property name="password" value="${mysql.password}"/>
+        <property name="jdbcUrl" value="${mysql.url}"/>
+        <property name="driverClass" value="${mysql.driver}"/>
+
+        <property name="breakAfterAcquireFailure" value="${breakAfterAcquireFailure}"/>
+        <property name="acquireRetryAttempts" value="${acquireRetryAttempts}"/>
+        <property name="idleConnectionTestPeriod" value="${idleConnectionTestPeriod}"/>
+        <property name="checkoutTimeout" value="${checkoutTimeout}"/>
+        <property name="unreturnedConnectionTimeout" value="${unreturnedConnectionTimeout}"/>
+        <property name="debugUnreturnedConnectionStackTraces" value="${debugUnreturnedConnectionStackTraces}"/>
+
+        <property name="initialPoolSize" value="${initialPoolSize}"/>
+        <property name="maxIdleTime" value="${maxIdleTime}"/>
+        <property name="maxPoolSize" value="${maxPoolSize}"/>
+        <property name="minPoolSize" value="${minPoolSize}"/>
+        <property name="acquireIncrement" value="${acquireIncrement}"/>
+        <property name="maxStatements" value="${maxStatements}"/>
+        <property name="maxStatementsPerConnection" value="${maxStatementsPerConnection}"/>
+
+    </bean>
+
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="mysql-DS"/>
+        <property name="packagesToScan">
+            <list>
+                <value>com.zxs.ssh.template.model</value>
+            </list>
+        </property>
+        <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
+        <property name="hibernateProperties">
+            <props>
+                <!--MySQLInnoDBDialect 支持mysql5.0以下版本-->
+                <!--MySQL57InnoDBDialect 支持mysql5.0以上版本-->
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL57InnoDBDialect</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hibernate.format_sql">false</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <!-- 核心线程数 -->
+        <property name="corePoolSize" value="${thread.pool.corePoolSize}" />
+        <!-- 最大线程数 -->
+        <property name="maxPoolSize" value="${thread.pool.maximumPoolSize}"/>
+        <!--核心线程支持的最大任务队列长度-->
+        <property name="queueCapacity" value="${thread.pool.queueCapacity}"/>
+        <!-- 线程池维护线程所允许的空闲时间 -->
+        <property name="keepAliveSeconds" value="${thread.pool.keepAliveTime}" />
+        <!--任务队列满载时策略-->
+        <property name="rejectedExecutionHandler">
+            <bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+        </property>
+    </bean>
+
+
+    <!-- transaction configuration-->
+    <tx:annotation-driven/>
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+</beans>

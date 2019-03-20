@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman name="证监会新闻采集">
+    <property key="duration" value="0"/><!-- 运行时间 0 表示永久，可以给 {n}s {n}m {n}h {n}d -->
+    <property key="scheduler.period" value="0"/><!-- 调度间隔时间 -->
+    <property key="logger.level" value="INFO"/><!-- 日志级别 INFO DEBUG WARN ERROR OFF -->
+    <property key="downloader.proxy"  value="172.20.0.2:8086" /><!-- 代理 -->
+    
+    <property key="worker.download.size" value="1"/><!-- 下载线程数 -->
+    <property key="worker.extract.size" value="2"/><!-- 页面抽取线程数 -->
+    <property key="worker.result.size" value="2"/><!-- 结果处理线程数 -->
+    <property key="worker.result.limit" value="0"/>
+    <property key="worker.result.handler" value="cms.spider.ZJHNewsResultHandler" />
+    
+    <property key="queue.store.path" value="store"/><!-- 存储文件的路径 -->
+    <property key="queue.zbus.enabled" value="0"/><!-- 分布式采集时要开启 -->
+    <property key="queue.zbus.broker" value="jvm"/><!-- ZBus服务地址,三种模式：1.jvm(本地模式) 2.ip:port(single模式) 3.[ip:port,ip:port](ha模式) -->
+    <seed url="http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/"/><!-- 写死种子入口的方式 -->
+    
+    <extract><!-- 页面抽取规则 -->
+    	<extractor name="Html" class="net.kernal.spiderman.worker.extract.extractor.impl.HtmlCleanerExtractor" /><!-- Html抽取器 -->
+    	<extractor name="Links" class="net.kernal.spiderman.worker.extract.extractor.impl.LinksExtractor"/><!-- 链接抽取器 -->
+    	<page name="详情页" isPersisted="1" extractor="Html"><!-- 如果不配置extractor属性，则使用默认的 -->
+    		<url-match-rule type="regex" value="^http://www\.csrc\.gov\.cn/pub/newsite/zjhxwfb/xwdd/\d+/t\d+_\d+\.html$"/>
+    		<model>
+				<field name="title" xpath="//div[@class='title']/text()" />
+				<field name="time" xpath="//div[@class='content']//div[@class='time']//span[2]/text()">
+					<filter type="script">$this.replace('时间：','')</filter>
+				</field>
+				<field name="content" xpath="//div[@class='content']" isSerialize="true" />
+				<field name="text" xpath="//div[@class='content']/text()" />
+			</model>
+    	</page>
+    	<page name="列表页" extractor="Html">
+    		<url-match-rule type="regex">^http://www\.csrc\.gov\.cn/pub/newsite/zjhxwfb/xwdd/(index_\d+\.html)?$</url-match-rule>
+    		<model>
+    			<field name="page_links" xpath="//div[@class='page']//script/text()" isForNewTask="true" isArray="true" isDistinct="true">
+    				<filter type="script">$this.match(/var currentPage = \d+/g)[0].replace('var currentPage = ', '')</filter>
+    				<filter type="script">parseInt($this)+1+''</filter>
+    				<filter type="script">'http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/index_'+$this+'.html'</filter>
+    			</field>
+    			<field name="detail_links" xpath="//ul[@id='myul']//li//a[@href]" attr="href" isForNewTask="true" isArray="true" isDistinct="true">
+    				<filter type="script">'http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/'+$this.replace('./','')</filter>
+    			</field>
+    		</model>
+    	</page>
+    </extract>
+</spiderman>

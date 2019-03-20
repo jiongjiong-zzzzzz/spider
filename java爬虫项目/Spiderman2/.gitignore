@@ -1,0 +1,9 @@
+.DS_Stors
+.idea
+/target/
+.settings/
+.project
+.classpath
+.DS_Store
+/store/
+/tmp/

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman name="天眼查">
+    <property key="duration" value="0" /><!-- 运行时间 0 表示永久，可以给 {n}s {n}m {n}h {n}d -->
+    <property key="scheduler.period" value="24h" /><!-- 调度间隔时间 -->
+    <property key="logger.level" value="DEBUG" /><!-- 日志级别 INFO DEBUG WARN ERROR OFF -->
+    
+    <property key="worker.download.enabled" value="1" /><!-- 是否开启下载工人 -->
+    <property key="worker.extract.enabled" value="1" /><!-- 是否开启解析工人 -->
+    <property key="worker.result.enabled" value="1" /><!-- 是否开启结果处理工人 -->
+    
+    <property key="worker.download.class" value="net.kernal.spiderman.worker.download.impl.WebDriverDownloader" />
+    <property key="worker.download.chrome.driver" value="dist/chromedriver.exe" />
+    <property key="worker.download.listener.delay" value="10s" />
+    <property key="worker.download.selector.delay" value="1s" />
+    <property key="worker.download.size" value="1" /><!-- 下载线程数 -->
+    <property key="worker.extract.size" value="2" /><!-- 页面抽取线程数 -->
+    <property key="worker.result.size" value="2" /><!-- 结果处理线程数 -->
+    
+    <property key="worker.result.limit" value="10" /><!-- 只采集10个结果就停止爬虫程序 -->
+    <property key="worker.result.handler" value="net.kernal.spiderman.worker.result.handler.impl.FileJsonResultHandler" />
+    <property key="worker.result.store" value="store/result" />
+    <property key="queue.store.path" value="store" /><!-- 检查器需要用到BDb存储 -->
+    <cookie name="myid" value="myval" />
+    <seed url="http://gd.tianyancha.com/search/p1" /><!-- 写死种子入口的方式 -->
+    <extract><!-- 页面抽取规则 -->
+        <extractor name="HtmlCleaner" class="net.kernal.spiderman.worker.extract.extractor.impl.HtmlCleanerExtractor" isDefault="1" />
+        <page name="企业信息" isPersisted="1" extractor="HtmlCleaner">
+			<url-match-rule type="regex" value="^.*\.tianyancha\.com/company/\d+$" />
+			<model>
+			    <field name="fullname" xpath="//div[@class='company_info_text']/p/text()" />
+			    <field name="phone" xpath="//span[@ng-if='company.baseInfo.phoneNumber']/text()" />
+			    <field name="email" xpath="//span[@ng-if='company.baseInfo.email']/text()" />
+			    <field name="website" xpath="//span[@ng-if='company.baseInfo.websiteList[0]']/text()" />
+			    <field name="regLocation" xpath="//span[@ng-if='company.baseInfo.regLocation']/text()" />
+			    <field name="legalPerson" xpath="//a[@ng-if='company.baseInfo.legalPersonName']/text()" />
+			    <field name="regCapital" xpath="//td[@class='td-regCapital-value']/text()" />
+			    <field name="status" xpath="//td[@class='td-regStatus-value']/text()" />
+			    <field name="regTime" xpath="//td[@class='td-regTime-value']/text()" />
+			    <field name="logo" xpath="//img[@class='tm-img']" attr="src" />
+			    <field name="industry" xpath="//p[@ng-if='company.baseInfo.industry']/text()" />
+			    <field name="companyOrgType" xpath="//p[@ng-if='company.baseInfo.companyOrgType']/text()" />
+			    <field name="regNumber" xpath="//p[@ng-if='company.baseInfo.regNumber']/text()" />
+			    <field name="fromTime" xpath="//p[@ng-if='company.baseInfo.fromTime']/text()" />
+			    <field name="estiblishTime" xpath="//p[@ng-if='company.baseInfo.estiblishTime']/text()" />
+			    <field name="regInstitute" xpath="//p[@ng-if='company.baseInfo.regInstitute']/text()" />
+			    <field name="businessScope" xpath="//p[@ng-if='company.baseInfo.businessScope']/text()" />
+			</model>
+		</page> 
+		<page name="列表页" extractor="HtmlCleaner">
+			<url-match-rule type="regex">^http://gd\.tianyancha\.com/search/p\d+$</url-match-rule>
+			<model>
+				<field name="详情URl" isForNewTask="1" isArray="1" xpath="//a[@class='query_name']" attr="href">
+					<!-- filter type="script">'http://tianyancha.com'+$this</filter -->
+				</field> 
+				<field name="分页URL" isForNewTask="1" isArray="1" isDistinct="1" xpath="//li[@class='pagination-page ng-scope']//a[@href]/text()">
+				    <filter type="script">if($this != '...'){'http://gd.tianyancha.com/search/p'+$this}</filter>
+				</field>
+			</model>
+		</page>
+	</extract>
+</spiderman>

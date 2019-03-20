@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman name="">
+    <property key="" value=""/>
+    <cookie name="" value=""/>
+    <seed url=""/>
+    <script name="" bindings=""/>
+    <extract>
+        <extractor name="" alias="" class="" isDefault=""/>
+        <filter name="" alias="" class=""/>
+        <page name="" isPersisted="" extractor="">
+            <url-match-rule type="equals|regex|startsWith|endsWith|contains" value=""/>
+            <model name="" fieldNameForNextPageUrl="" fieldNameForNextPageContent="">
+                <field name="" xpath="" isForNewTask="" isArray="" isDistinct="" attr="" filter="">
+                    <filter name="" type="script"/>
+                </field>
+            </model>
+        </page>
+    </extract>
+</spiderman>

@@ -1,0 +1,374 @@
+2018-11-07 14:42:12 [main] [org.apache.curator.framework.imps.CuratorFrameworkImpl] [INFO] - Starting
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:host.name=DESKTOP-S80305C
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:java.version=1.8.0_101
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:java.vendor=Oracle Corporation
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:java.home=C:\jdk1.8.0_101\jre
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:java.class.path=C:\jdk1.8.0_101\jre\lib\charsets.jar;C:\jdk1.8.0_101\jre\lib\deploy.jar;C:\jdk1.8.0_101\jre\lib\ext\access-bridge-64.jar;C:\jdk1.8.0_101\jre\lib\ext\cldrdata.jar;C:\jdk1.8.0_101\jre\lib\ext\dnsns.jar;C:\jdk1.8.0_101\jre\lib\ext\jaccess.jar;C:\jdk1.8.0_101\jre\lib\ext\jfxrt.jar;C:\jdk1.8.0_101\jre\lib\ext\localedata.jar;C:\jdk1.8.0_101\jre\lib\ext\nashorn.jar;C:\jdk1.8.0_101\jre\lib\ext\sunec.jar;C:\jdk1.8.0_101\jre\lib\ext\sunjce_provider.jar;C:\jdk1.8.0_101\jre\lib\ext\sunmscapi.jar;C:\jdk1.8.0_101\jre\lib\ext\sunpkcs11.jar;C:\jdk1.8.0_101\jre\lib\ext\zipfs.jar;C:\jdk1.8.0_101\jre\lib\javaws.jar;C:\jdk1.8.0_101\jre\lib\jce.jar;C:\jdk1.8.0_101\jre\lib\jfr.jar;C:\jdk1.8.0_101\jre\lib\jfxswt.jar;C:\jdk1.8.0_101\jre\lib\jsse.jar;C:\jdk1.8.0_101\jre\lib\management-agent.jar;C:\jdk1.8.0_101\jre\lib\plugin.jar;C:\jdk1.8.0_101\jre\lib\resources.jar;C:\jdk1.8.0_101\jre\lib\rt.jar;E:\新建文件夹 (2)\ispider-master\target\classes;C:\Users\ZZ\.m2\repository\mysql\mysql-connector-java\5.1.39\mysql-connector-java-5.1.39.jar;C:\Users\ZZ\.m2\repository\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;C:\Users\ZZ\.m2\repository\commons-pool\commons-pool\1.6\commons-pool-1.6.jar;C:\Users\ZZ\.m2\repository\commons-dbutils\commons-dbutils\1.6\commons-dbutils-1.6.jar;C:\Users\ZZ\.m2\repository\org\slf4j\slf4j-api\1.7.10\slf4j-api-1.7.10.jar;C:\Users\ZZ\.m2\repository\org\slf4j\slf4j-log4j12\1.7.10\slf4j-log4j12-1.7.10.jar;C:\Users\ZZ\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ZZ\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\ZZ\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\ZZ\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ZZ\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\ZZ\.m2\repository\net\sourceforge\htmlcleaner\htmlcleaner\2.10\htmlcleaner-2.10.jar;C:\Users\ZZ\.m2\repository\org\jdom\jdom2\2.0.5\jdom2-2.0.5.jar;C:\Users\ZZ\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\ZZ\.m2\repository\redis\clients\jedis\2.9.0\jedis-2.9.0.jar;C:\Users\ZZ\.m2\repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-client\1.1.5\hbase-client-1.1.5.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-annotations\1.1.5\hbase-annotations-1.1.5.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-common\1.1.5\hbase-common-1.1.5.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-protocol\1.1.5\hbase-protocol-1.1.5.jar;C:\Users\ZZ\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\ZZ\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\ZZ\.m2\repository\com\google\guava\guava\12.0.1\guava-12.0.1.jar;C:\Users\ZZ\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ZZ\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\ZZ\.m2\repository\io\netty\netty-all\4.0.23.Final\netty-all-4.0.23.Final.jar;C:\Users\ZZ\.m2\repository\org\apache\htrace\htrace-core\3.1.0-incubating\htrace-core-3.1.0-incubating.jar;C:\Users\ZZ\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\ZZ\.m2\repository\org\jruby\jcodings\jcodings\1.0.8\jcodings-1.0.8.jar;C:\Users\ZZ\.m2\repository\org\jruby\joni\joni\2.1.2\joni-2.1.2.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-auth\2.5.1\hadoop-auth-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\ZZ\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\ZZ\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\ZZ\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-common\2.5.1\hadoop-common-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-annotations\2.5.1\hadoop-annotations-2.5.1.jar;C:\jdk1.8.0_101\lib\tools.jar;C:\Users\ZZ\.m2\repository\org\apache\commons\commons-math3\3.1.1\commons-math3-3.1.1.jar;C:\Users\ZZ\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\ZZ\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\ZZ\.m2\repository\commons-el\commons-el\1.0\commons-el-1.0.jar;C:\Users\ZZ\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\ZZ\.m2\repository\commons-digester\commons-digester\1.8\commons-digester-1.8.jar;C:\Users\ZZ\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\ZZ\.m2\repository\org\apache\avro\avro\1.7.4\avro-1.7.4.jar;C:\Users\ZZ\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\ZZ\.m2\repository\org\xerial\snappy\snappy-java\1.0.4.1\snappy-java-1.0.4.1.jar;C:\Users\ZZ\.m2\repository\com\jcraft\jsch\0.1.42\jsch-0.1.42.jar;C:\Users\ZZ\.m2\repository\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\Users\ZZ\.m2\repository\org\tukaani\xz\1.0\xz-1.0.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.5.1\hadoop-mapreduce-client-core-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.5.1\hadoop-yarn-common-2.5.1.jar;C:\Users\ZZ\.m2\repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Users\ZZ\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\ZZ\.m2\repository\com\github\stephenc\findbugs\findbugs-annotations\1.3.9-1\findbugs-annotations-1.3.9-1.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-server\1.1.5\hbase-server-1.1.5.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-procedure\1.1.5\hbase-procedure-1.1.5.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-common\1.1.5\hbase-common-1.1.5-tests.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-prefix-tree\1.1.5\hbase-prefix-tree-1.1.5.jar;C:\Users\ZZ\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\ZZ\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-hadoop-compat\1.1.5\hbase-hadoop-compat-1.1.5.jar;C:\Users\ZZ\.m2\repository\org\apache\hbase\hbase-hadoop2-compat\1.1.5\hbase-hadoop2-compat-1.1.5.jar;C:\Users\ZZ\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\ZZ\.m2\repository\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\ZZ\.m2\repository\com\sun\jersey\jersey-server\1.9\jersey-server-1.9.jar;C:\Users\ZZ\.m2\repository\asm\asm\3.1\asm-3.1.jar;C:\Users\ZZ\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\ZZ\.m2\repository\org\apache\commons\commons-math\2.2\commons-math-2.2.jar;C:\Users\ZZ\.m2\repository\org\mortbay\jetty\jetty\6.1.26\jetty-6.1.26.jar;C:\Users\ZZ\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\ZZ\.m2\repository\org\mortbay\jetty\jetty-sslengine\6.1.26\jetty-sslengine-6.1.26.jar;C:\Users\ZZ\.m2\repository\org\mortbay\jetty\jsp-2.1\6.1.14\jsp-2.1-6.1.14.jar;C:\Users\ZZ\.m2\repository\org\mortbay\jetty\jsp-api-2.1\6.1.14\jsp-api-2.1-6.1.14.jar;C:\Users\ZZ\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.14\servlet-api-2.5-6.1.14.jar;C:\Users\ZZ\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\ZZ\.m2\repository\org\codehaus\jackson\jackson-jaxrs\1.9.13\jackson-jaxrs-1.9.13.jar;C:\Users\ZZ\.m2\repository\tomcat\jasper-compiler\5.5.23\jasper-compiler-5.5.23.jar;C:\Users\ZZ\.m2\repository\tomcat\jasper-runtime\5.5.23\jasper-runtime-5.5.23.jar;C:\Users\ZZ\.m2\repository\org\jamon\jamon-runtime\2.3.1\jamon-runtime-2.3.1.jar;C:\Users\ZZ\.m2\repository\com\lmax\disruptor\3.3.0\disruptor-3.3.0.jar;C:\Users\ZZ\.m2\repository\org\owasp\esapi\esapi\2.1.0\esapi-2.1.0.jar;C:\Users\ZZ\.m2\repository\commons-beanutils\commons-beanutils-core\1.7.0\commons-beanutils-core-1.7.0.jar;C:\Users\ZZ\.m2\repository\commons-fileupload\commons-fileupload\1.2\commons-fileupload-1.2.jar;C:\Users\ZZ\.m2\repository\xom\xom\1.2.5\xom-1.2.5.jar;C:\Users\ZZ\.m2\repository\xml-apis\xml-apis\1.3.03\xml-apis-1.3.03.jar;C:\Users\ZZ\.m2\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar;C:\Users\ZZ\.m2\repository\org\beanshell\bsh-core\2.0b4\bsh-core-2.0b4.jar;C:\Users\ZZ\.m2\repository\org\owasp\antisamy\antisamy\1.4.3\antisamy-1.4.3.jar;C:\Users\ZZ\.m2\repository\org\apache\xmlgraphics\batik-css\1.7\batik-css-1.7.jar;C:\Users\ZZ\.m2\repository\org\apache\xmlgraphics\batik-ext\1.7\batik-ext-1.7.jar;C:\Users\ZZ\.m2\repository\org\apache\xmlgraphics\batik-util\1.7\batik-util-1.7.jar;C:\Users\ZZ\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\ZZ\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.12\nekohtml-1.9.12.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-client\2.5.1\hadoop-client-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-app\2.5.1\hadoop-mapreduce-client-app-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-common\2.5.1\hadoop-mapreduce-client-common-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-yarn-client\2.5.1\hadoop-yarn-client-2.5.1.jar;C:\Users\ZZ\.m2\repository\com\sun\jersey\jersey-client\1.9\jersey-client-1.9.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-yarn-server-common\2.5.1\hadoop-yarn-server-common-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-shuffle\2.5.1\hadoop-mapreduce-client-shuffle-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.5.1\hadoop-yarn-api-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-jobclient\2.5.1\hadoop-mapreduce-client-jobclient-2.5.1.jar;C:\Users\ZZ\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.5.1\hadoop-hdfs-2.5.1.jar;C:\Users\ZZ\.m2\repository\commons-daemon\commons-daemon\1.0.13\commons-daemon-1.0.13.jar;C:\Users\ZZ\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\ZZ\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\ZZ\.m2\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;C:\Users\ZZ\.m2\repository\org\apache\curator\curator-framework\2.7.1\curator-framework-2.7.1.jar;C:\Users\ZZ\.m2\repository\org\apache\curator\curator-client\2.7.1\curator-client-2.7.1.jar;C:\Users\ZZ\.m2\repository\org\quartz-scheduler\quartz\1.8.4\quartz-1.8.4.jar;C:\Users\ZZ\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\ZZ\.m2\repository\javax\mail\mail\1.4.4\mail-1.4.4.jar;C:\Users\ZZ\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;F:\软件\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar;C:\Users\ZZ\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:java.library.path=C:\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;E:\Anaconda3;E:\Anaconda3\Library\mingw-w64\bin;E:\Anaconda3\Library\usr\bin;E:\Anaconda3\Library\bin;E:\Anaconda3\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:;c:\jdk1.8.0_101\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit;F:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;F:\Program Files\mysql-5.7.12-winx64\bin;C:\jdk1.8.0_101;C:\Program Files\Java\jre1.8.0_162;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\ZZ\AppData\Local\Temp\phantomjs-2.1.1-windows\bin;F:\Program Files\MongoDB\Server\3.4\bin;F:\浏览器下载\winutilsmaster\winutils-master\hadoop-2.6.4\bin;F:\浏;器下载\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;Program Files\Git\cmd;F:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;E:\Programs\Python\Scripts\;E:\Programs\Python\;"C:\Users\ZZ\AppData\Local\Microsoft\WindowsApps;F:\Program Files\mysql-5.7.12-winx64\bin";C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;;E:\Fiddler;C:\Users\ZZ\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:java.io.tmpdir=C:\Users\ZZ\AppData\Local\Temp\
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:java.compiler=<NA>
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:os.name=Windows 10
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:os.arch=amd64
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:os.version=10.0
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:user.name=ZZ
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:user.home=C:\Users\ZZ
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Client environment:user.dir=E:\新建文件夹 (2)\ispider-master
+2018-11-07 14:42:12 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Initiating client connection, connectString=uplooking01:2181,uplooking02:2181,uplooking03:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3eb25e1a
+2018-11-07 14:42:14 [main] [org.apache.curator.framework.imps.CuratorFrameworkImpl] [ERROR] - Background exception was not retry-able or retry gave up
+java.net.UnknownHostException: uplooking01
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider.<init>(StaticHostProvider.java:61)
+	at org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:445)
+	at org.apache.curator.utils.DefaultZookeeperFactory.newZooKeeper(DefaultZookeeperFactory.java:29)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$2.newZooKeeper(CuratorFrameworkImpl.java:146)
+	at org.apache.curator.HandleHolder$1.getZooKeeper(HandleHolder.java:94)
+	at org.apache.curator.HandleHolder.getZooKeeper(HandleHolder.java:55)
+	at org.apache.curator.ConnectionState.reset(ConnectionState.java:218)
+	at org.apache.curator.ConnectionState.start(ConnectionState.java:102)
+	at org.apache.curator.CuratorZookeeperClient.start(CuratorZookeeperClient.java:189)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:248)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:98)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:116)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-07 14:42:30 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (uplooking01:2181,uplooking02:2181,uplooking03:2181) and timeout (15000) / elapsed (17469)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:103)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:116)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-07 14:42:46 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (uplooking01:2181,uplooking02:2181,uplooking03:2181) and timeout (15000) / elapsed (33527)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:103)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:116)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-07 14:43:04 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (uplooking01:2181,uplooking02:2181,uplooking03:2181) and timeout (15000) / elapsed (51547)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:103)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:116)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-07 14:43:24 [main] [org.apache.curator.ConnectionState] [WARN] - Connection attempt unsuccessful after 71568 (greater than max timeout of 60000). Resetting connection and trying again with a new connection.
+2018-11-07 14:43:24 [main] [org.apache.zookeeper.ZooKeeper] [INFO] - Initiating client connection, connectString=uplooking01:2181,uplooking02:2181,uplooking03:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3eb25e1a
+2018-11-07 14:43:48 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:43:52 [pool-3-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:43:54 [pool-3-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:43:54 [pool-3-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:43:56 [pool-3-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:43:56 [pool-3-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:43:56 [pool-3-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:43:58 [pool-3-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:01 [pool-3-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:01 [pool-3-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:01 [pool-3-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:03 [pool-3-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:03 [pool-3-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:03 [pool-3-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:05 [pool-3-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:05 [pool-3-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:05 [pool-3-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:06 [pool-3-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.suning.com/0-20006-0.html，消耗时长：1962 ms，代理信息：null:null
+2018-11-07 14:44:06 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=1，消耗时长：2003 ms，代理信息：null:null
+2018-11-07 14:44:07 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=1, 消耗时长:153ms
+2018-11-07 14:44:08 [pool-3-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:08 [pool-3-thread-4] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://item.jd.com/8735304.html，消耗时长：396 ms，代理信息：null:null
+2018-11-07 14:44:08 [pool-3-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://item.jd.com/5089225.html，消耗时长：419 ms，代理信息：null:null
+2018-11-07 14:44:09 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:09 [pool-3-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://p.3.cn/prices/mgets?pduid=1504781656858214892980&skuIds=J_5089225，消耗时长：133 ms，代理信息：null:null
+2018-11-07 14:44:09 [pool-3-thread-4] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://p.3.cn/prices/mgets?pduid=1504781656858214892980&skuIds=J_8735304，消耗时长：127 ms，代理信息：null:null
+2018-11-07 14:44:10 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=2&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：231 ms，代理信息：null:null
+2018-11-07 14:44:10 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=2&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:8ms
+2018-11-07 14:44:11 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=3&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：224 ms，代理信息：null:null
+2018-11-07 14:44:11 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=3&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:106ms
+2018-11-07 14:44:12 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://item.jd.com/100000773889.html，消耗时长：103 ms，代理信息：null:null
+2018-11-07 14:44:12 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://p.3.cn/prices/mgets?pduid=1504781656858214892980&skuIds=J_100000773889，消耗时长：63 ms，代理信息：null:null
+2018-11-07 14:44:12 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:15 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=4&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：142 ms，代理信息：null:null
+2018-11-07 14:44:15 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=4&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:14ms
+2018-11-07 14:44:16 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=5&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：371 ms，代理信息：null:null
+2018-11-07 14:44:16 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=5&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:8ms
+2018-11-07 14:44:18 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=6&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：616 ms，代理信息：null:null
+2018-11-07 14:44:18 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=6&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:8ms
+2018-11-07 14:44:19 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=7&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：178 ms，代理信息：null:null
+2018-11-07 14:44:19 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=7&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:44:20 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=8&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：172 ms，代理信息：null:null
+2018-11-07 14:44:21 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=8&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:7ms
+2018-11-07 14:44:22 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:24 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=9&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：128 ms，代理信息：null:null
+2018-11-07 14:44:24 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=9&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:8ms
+2018-11-07 14:44:25 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=10&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：159 ms，代理信息：null:null
+2018-11-07 14:44:25 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=10&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:44:26 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:28 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:30 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:32 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=11&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：147 ms，代理信息：null:null
+2018-11-07 14:44:32 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=11&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:44:33 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=12&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：134 ms，代理信息：null:null
+2018-11-07 14:44:33 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=12&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:44:34 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=13&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：127 ms，代理信息：null:null
+2018-11-07 14:44:35 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=13&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 14:44:36 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=14&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：148 ms，代理信息：null:null
+2018-11-07 14:44:36 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=14&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 14:44:37 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=15&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：288 ms，代理信息：null:null
+2018-11-07 14:44:37 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=15&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 14:44:38 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:40 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:42 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=16&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：131 ms，代理信息：null:null
+2018-11-07 14:44:42 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=16&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:44:43 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:45 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:47 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:49 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:51 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=17&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：199 ms，代理信息：null:null
+2018-11-07 14:44:52 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=17&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:44:53 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:55 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:57 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:44:59 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=18&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：124 ms，代理信息：null:null
+2018-11-07 14:44:59 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=18&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 14:45:00 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=19&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：288 ms，代理信息：null:null
+2018-11-07 14:45:00 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=19&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 14:45:01 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:03 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:05 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:07 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=20&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：133 ms，代理信息：null:null
+2018-11-07 14:45:07 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=20&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:45:08 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=21&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：135 ms，代理信息：null:null
+2018-11-07 14:45:08 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=21&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 14:45:10 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=22&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：149 ms，代理信息：null:null
+2018-11-07 14:45:10 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=22&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:45:11 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:13 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=23&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：157 ms，代理信息：null:null
+2018-11-07 14:45:13 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=23&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:6ms
+2018-11-07 14:45:14 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:16 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:18 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:20 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=24&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：185 ms，代理信息：null:null
+2018-11-07 14:45:20 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=24&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 14:45:21 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:23 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=25&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：237 ms，代理信息：null:null
+2018-11-07 14:45:23 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=25&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 14:45:24 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:27 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=26&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：142 ms，代理信息：null:null
+2018-11-07 14:45:27 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=26&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:6ms
+2018-11-07 14:45:28 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=27&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：163 ms，代理信息：null:null
+2018-11-07 14:45:28 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=27&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 14:45:29 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=28&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：167 ms，代理信息：null:null
+2018-11-07 14:45:29 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=28&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:24ms
+2018-11-07 14:45:30 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=29&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：124 ms，代理信息：null:null
+2018-11-07 14:45:30 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=29&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:45:31 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:33 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:35 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=30&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：144 ms，代理信息：null:null
+2018-11-07 14:45:35 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=30&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 14:45:37 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=31&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：161 ms，代理信息：null:null
+2018-11-07 14:45:37 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=31&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:45:38 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:40 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=32&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：145 ms，代理信息：null:null
+2018-11-07 14:45:40 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=32&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:45:41 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:43 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:45 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:47 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:49 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 14:45:51 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=33&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：114 ms，代理信息：null:null
+2018-11-07 14:45:51 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=33&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:6ms
+2018-11-07 14:45:52 [pool-3-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=34&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：142 ms，代理信息：null:null
+2018-11-07 14:45:52 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=34&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 14:45:53 [pool-3-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:15 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:17 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:18 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:37 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:37 [pool-1-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:39 [pool-1-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:39 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:39 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:45 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:45 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:45 [pool-1-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:47 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:47 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:47 [pool-1-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:49 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:49 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:49 [pool-1-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:51 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.suning.com/0-20006-0.html，消耗时长：1766 ms，代理信息：null:null
+2018-11-07 15:07:51 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=1，消耗时长：1944 ms，代理信息：null:null
+2018-11-07 15:07:51 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:51 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:51 [pool-1-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:52 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=1, 消耗时长:96ms
+2018-11-07 15:07:53 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=2&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：167 ms，代理信息：null:null
+2018-11-07 15:07:53 [pool-1-thread-2] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:54 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=2&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:26ms
+2018-11-07 15:07:54 [pool-1-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://item.jd.com/27393700032.html，消耗时长：486 ms，代理信息：null:null
+2018-11-07 15:07:54 [pool-1-thread-4] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://item.jd.com/28331229416.html，消耗时长：716 ms，代理信息：null:null
+2018-11-07 15:07:58 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:58 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:58 [pool-1-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:07:59 [pool-1-thread-2] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.suning.com/0-20006-0.html，消耗时长：411 ms，代理信息：null:null
+2018-11-07 15:07:59 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=1，消耗时长：411 ms，代理信息：null:null
+2018-11-07 15:08:00 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=1, 消耗时长:60ms
+2018-11-07 15:08:00 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:00 [pool-1-thread-4] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:00 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=2&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：112 ms，代理信息：null:null
+2018-11-07 15:08:00 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=2&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:17ms
+2018-11-07 15:08:01 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=3&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：121 ms，代理信息：null:null
+2018-11-07 15:08:01 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=3&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:12ms
+2018-11-07 15:08:01 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:02 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:02 [pool-1-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=4&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：109 ms，代理信息：null:null
+2018-11-07 15:08:02 [pool-1-thread-4] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://item.jd.com/26303474756.html，消耗时长：140 ms，代理信息：null:null
+2018-11-07 15:08:02 [pool-1-thread-5] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=4&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:14ms
+2018-11-07 15:08:02 [pool-1-thread-4] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://p.3.cn/prices/mgets?pduid=1504781656858214892980&skuIds=J_26303474756，消耗时长：27 ms，代理信息：null:null
+2018-11-07 15:08:03 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:04 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=5&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：243 ms，代理信息：null:null
+2018-11-07 15:08:04 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=5&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:27ms
+2018-11-07 15:08:04 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=6&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：135 ms，代理信息：null:null
+2018-11-07 15:08:04 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=6&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:10ms
+2018-11-07 15:08:05 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=7&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：271 ms，代理信息：null:null
+2018-11-07 15:08:05 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=7&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:10ms
+2018-11-07 15:08:05 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:05 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=8&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：144 ms，代理信息：null:null
+2018-11-07 15:08:06 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=8&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:6ms
+2018-11-07 15:08:06 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:07 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=9&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：136 ms，代理信息：null:null
+2018-11-07 15:08:07 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=9&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 15:08:07 [pool-1-thread-5] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:08 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:08 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=10&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：106 ms，代理信息：null:null
+2018-11-07 15:08:08 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=10&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:7ms
+2018-11-07 15:08:09 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=11&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：127 ms，代理信息：null:null
+2018-11-07 15:08:09 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=11&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:7ms
+2018-11-07 15:08:09 [pool-1-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://item.jd.com/26955991276.html，消耗时长：41 ms，代理信息：null:null
+2018-11-07 15:08:09 [pool-1-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://p.3.cn/prices/mgets?pduid=1504781656858214892980&skuIds=J_26955991276，消耗时长：22 ms，代理信息：null:null
+2018-11-07 15:08:10 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:10 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=12&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：149 ms，代理信息：null:null
+2018-11-07 15:08:11 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=12&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 15:08:12 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=13&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：126 ms，代理信息：null:null
+2018-11-07 15:08:12 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=13&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:12 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=14&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：97 ms，代理信息：null:null
+2018-11-07 15:08:12 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=14&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:9ms
+2018-11-07 15:08:13 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=15&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：94 ms，代理信息：null:null
+2018-11-07 15:08:13 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=15&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 15:08:13 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:14 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=16&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：96 ms，代理信息：null:null
+2018-11-07 15:08:14 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=16&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:15 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:15 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:17 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:17 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:19 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=17&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：104 ms，代理信息：null:null
+2018-11-07 15:08:19 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:19 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=17&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:20 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=18&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：120 ms，代理信息：null:null
+2018-11-07 15:08:20 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=18&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 15:08:21 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:21 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:23 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=19&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：126 ms，代理信息：null:null
+2018-11-07 15:08:23 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=19&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:23 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=20&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：98 ms，代理信息：null:null
+2018-11-07 15:08:23 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=20&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:6ms
+2018-11-07 15:08:24 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=21&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：126 ms，代理信息：null:null
+2018-11-07 15:08:24 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=21&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:24 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:25 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:26 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=22&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：137 ms，代理信息：null:null
+2018-11-07 15:08:26 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=22&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:27 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=23&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：132 ms，代理信息：null:null
+2018-11-07 15:08:27 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=23&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 15:08:28 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=24&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：124 ms，代理信息：null:null
+2018-11-07 15:08:28 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=24&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:6ms
+2018-11-07 15:08:28 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:29 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=25&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：105 ms，代理信息：null:null
+2018-11-07 15:08:29 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=25&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:6ms
+2018-11-07 15:08:30 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=26&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：126 ms，代理信息：null:null
+2018-11-07 15:08:30 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=26&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:30 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:31 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:32 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:33 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:34 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:35 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:37 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=27&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：103 ms，代理信息：null:null
+2018-11-07 15:08:37 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=27&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:5ms
+2018-11-07 15:08:37 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:39 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:41 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=28&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：3109 ms，代理信息：null:null
+2018-11-07 15:08:41 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=28&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:7ms
+2018-11-07 15:08:41 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:42 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:43 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:44 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:45 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=29&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：81 ms，代理信息：null:null
+2018-11-07 15:08:45 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=29&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 15:08:46 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=30&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：107 ms，代理信息：null:null
+2018-11-07 15:08:46 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=30&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 15:08:46 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=31&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：109 ms，代理信息：null:null
+2018-11-07 15:08:46 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=31&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 15:08:47 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:47 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:49 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:49 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=32&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：86 ms，代理信息：null:null
+2018-11-07 15:08:49 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=32&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 15:08:51 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=33&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：234 ms，代理信息：null:null
+2018-11-07 15:08:51 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=33&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:3ms
+2018-11-07 15:08:51 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:52 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:53 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:54 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=34&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：121 ms，代理信息：null:null
+2018-11-07 15:08:54 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=34&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:7ms
+2018-11-07 15:08:55 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:55 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=35&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：98 ms，代理信息：null:null
+2018-11-07 15:08:55 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=35&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:56 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=36&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：102 ms，代理信息：null:null
+2018-11-07 15:08:56 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=36&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:57 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:08:57 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=37&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：116 ms，代理信息：null:null
+2018-11-07 15:08:57 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=37&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:08:59 [pool-1-thread-3] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=38&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：299 ms，代理信息：null:null
+2018-11-07 15:08:59 [pool-1-thread-3] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=38&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:2ms
+2018-11-07 15:08:59 [pool-1-thread-1] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=39&sort=sort_rank_asc&trans=1&JL=6_0_0，消耗时长：260 ms，代理信息：null:null
+2018-11-07 15:08:59 [pool-1-thread-1] [cn.xpleaf.spider.core.parser.Impl.JDHtmlParserImpl] [INFO] - 解析列表页面:https://list.jd.com/list.html?cat=9987,653,655&page=39&sort=sort_rank_asc&trans=1&JL=6_0_0, 消耗时长:4ms
+2018-11-07 15:09:00 [pool-1-thread-3] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:09:00 [pool-1-thread-1] [cn.xpleaf.spider.ISpider] [INFO] - 没有url，请及时添加种子url
+2018-11-07 15:16:13 [main] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.suning.com/0-20006-0.html，消耗时长：5107 ms，代理信息：null:null
+2018-11-07 15:17:37 [main] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=1出错，代理信息：null:null，
+2018-11-07 15:18:14 [main] [cn.xpleaf.spider.utils.HttpUtil] [INFO] - 下载网页：https://list.suning.com/0-20006-0.html，消耗时长：11101 ms，代理信息：null:null

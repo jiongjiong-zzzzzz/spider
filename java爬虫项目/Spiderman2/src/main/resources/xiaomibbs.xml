@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman name="单篇分页">
+    <property key="duration" value="30s" /><!-- 运行时间 0 表示永久，可以给 {n}s {n}m {n}h {n}d -->
+    <property key="scheduler.period" value="60s" /><!-- 调度间隔时间 -->
+    <property key="logger.level" value="INFO" /><!-- 日志级别 INFO DEBUG WARN ERROR OFF -->
+    <!--property key="downloader.proxy" value="172.20.0.1:8086" /--><!-- 代理 -->
+    
+    <property key="worker.download.enabled" value="1" /><!-- 是否开启下载工人 -->
+    <property key="worker.extract.enabled" value="1" /><!-- 是否开启解析工人 -->
+    <property key="worker.result.enabled" value="1" /><!-- 是否开启结果处理工人 -->
+    
+    <property key="worker.download.size" value="5" /><!-- 下载线程数 -->
+    <property key="worker.extract.size" value="2" /><!-- 页面抽取线程数 -->
+    <property key="worker.result.size" value="1" /><!-- 结果处理线程数 -->
+    <property key="worker.result.limit" value="0" />
+    <property key="worker.result.handler" value="net.kernal.spiderman.worker.result.handler.impl.ConsoleResultHandler" />
+    <property key="queue.store.path" value="store" /><!-- 存储文件的路径 -->
+    <property key="queue.zbus.enabled" value="0" /><!-- 分布式采集时要开启 -->
+    <property key="queue.zbus.broker" value="jvm" /><!-- ZBus服务地址,三种模式：1.jvm(本地模式) 2.ip:port(single模式) 3.[ip:port,ip:port](ha模式) -->
+    <seed url="http://bbs.xiaomi.cn/d-1" />
+    <extract><!-- 页面抽取规则 -->
+        <extractor name="Html" class="net.kernal.spiderman.worker.extract.extractor.impl.HtmlCleanerExtractor" /><!-- Html抽取器 -->
+        <extractor name="Links" class="net.kernal.spiderman.worker.extract.extractor.impl.LinksExtractor" /><!-- 链接抽取器 -->
+		<page name="列表页" isPersisted="1" extractor="Html">
+			<url-match-rule type="startsWith" value="http://bbs.xiaomi.cn/d-" />
+			<model>
+				<field name="next-page" isForNewTask="1" isDistinct="1" xpath="//li[@class='next']/a" attr="href" >
+					<filter type="script">$this = "http://bbs.xiaomi.cn"+$this</filter>
+				</field>
+				<field name="default" value="给定字段值"/>
+				<field name="bbs" xpath="//a[@class='logo']/text()"/>
+				<field name="list" xpath="//div[@class='theme_con']/ul/li" isArray="1">
+					<field name="listName" xpath="//a[@class='theme_nav_list']/text()" isFromDoc="1"/>
+					<field name="title" xpath="//div[@class='title']/a/text()" />
+					<field name="link" xpath="//div[@class='title']/a" attr="href"/>
+					<field name="user" xpath="//a[@class='user_name']/text()" />
+					<field name="time" xpath="//span[@class='time txt']/text()" />
+					<field name="section" xpath="//a[@class='time txt']/text()" />
+				</field>
+			</model>
+		</page>
+	</extract>
+</spiderman>

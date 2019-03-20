@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman name="开源中国GIT">
+    <property key="duration" value="0" /><!-- 运行时间 0 表示永久，可以给 {n}s {n}m {n}h {n}d -->
+    <property key="scheduler.period" value="24h" /><!-- 调度间隔时间 -->
+    <property key="logger.level" value="WARN" /><!-- 日志级别 INFO DEBUG WARN ERROR OFF -->
+    <!--property key="downloader.proxy" value="172.20.0.1:8086" /--> <!-- 代理 -->
+    
+    <property key="worker.download.enabled" value="1" /><!-- 是否开启下载工人 -->
+    <property key="worker.extract.enabled" value="1" /><!-- 是否开启解析工人 -->
+    <property key="worker.result.enabled" value="1" /><!-- 是否开启结果处理工人 -->
+    
+    <property key="worker.download.class" value="net.kernal.spiderman.worker.download.impl.WebDriverDownloader" />
+	<property key="worker.download.chrome.driver" value="dist/chromedriver" /><!-- WebDriver下载器的Chrome驱动 -->
+    <property key="worker.download.selector.delay" value="1s" /><!-- WebDriver下载器的延时时间 -->
+	<!--第一种方式，设置一个持续时间，手动输入登录账号密码 -->
+	<property key="worker.download.listener.delay" value="30s" /><!-- DelayListener监听器持续时间 -->
+	
+    <!--第二种方式，在下方配置账号密码自定登录-->
+    <!-- <property key="worker.download.listener" value="test.ListenerForLoginPage" /> --><!-- 自定义下载监听器处理 -->
+    <property key="username.xpath" value="//input[@id='user_login']" /><!-- 账号输入框 -->
+    <property key="password.xpath" value="//input[@id='user_password']" /><!-- 密码输入框 -->
+    <property key="submit.xpath" value="//input[@name='commit']" /><!-- 提交按钮 -->
+    <property key="username.value" value="你的账号" />
+    <property key="password.value" value="你的密码" />
+    
+    <property key="worker.download.size" value="1" /><!-- 下载线程数 -->
+    <property key="worker.extract.size" value="2" /><!-- 页面抽取线程数 -->
+    <property key="worker.result.size" value="2" /><!-- 结果处理线程数 -->
+    <property key="worker.result.handler" value="net.kernal.spiderman.worker.result.handler.impl.FileJsonResultHandler" />
+    <property key="worker.result.store" value="store/result" /><!-- 采集结果放置目录 -->
+    <property key="queue.store.path" value="store" /><!-- 检查器需要用到BDb存储 -->
+    
+    <!-- 两个种子，一个用来登录，一个是采集数据 -->
+    <seed url="https://git.oschina.net/login" />
+    <seed url="https://git.oschina.net" />
+    
+    <!-- 页面抽取规则 -->
+    <extract>
+        <extractor name="HtmlCleaner" class="net.kernal.spiderman.worker.extract.extractor.impl.HtmlCleanerExtractor" isDefault="1" />
+        <extractor name="Text" class="net.kernal.spiderman.worker.extract.extractor.impl.TextExtractor" />
+		<page name="我的项目列表" extractor="HtmlCleaner">
+			<url-match-rule type="equals">https://git.oschina.net</url-match-rule>
+			<model>
+				<field name="项目URL" isForNewTask="1" isArray="1" xpath="//a[@class='project']" attr="href">
+					<filter type="script">'https://git.oschina.net'+$this</filter>
+				</field> 
+			</model>
+		</page>
+		<page name="项目详情" extractor="Text">
+			<url-match-rule type="startsWith">https://git.oschina.net/l-weiwei/</url-match-rule>
+		</page>
+	</extract>
+</spiderman>

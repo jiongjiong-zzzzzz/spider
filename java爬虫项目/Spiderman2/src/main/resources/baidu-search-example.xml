@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman>
+    <property key="duration" value="0" /><!-- 运行时间，可以给 {n}s {n}m {n}h {n}d -->
+    <property key="scheduler.period" value="10h" /><!-- 调度间隔时间 -->
+    <property key="logger.level" value="DEBUG" /><!-- 日志级别 INFO DEBUG WARN ERROR OFF -->
+    <!--<property key="worker.download.delay" value="100" />  下载延迟，免得被封 -->
+    <property key="downloader.proxy" value="172.20.0.2:8086" /><!-- 下载代理 -->
+    <property key="worker.download.enabled" value="1" /><!-- 是否开启下载工人 -->
+    <property key="worker.extract.enabled" value="1" /><!-- 是否开启解析工人 -->
+    <property key="worker.result.enabled" value="1" /><!-- 是否开启结果处理工人 -->
+    
+    <property key="worker.download.size" value="10" /><!-- 下载线程数 -->
+    <property key="worker.extract.size" value="10" /><!-- 页面抽取线程数 -->
+    <property key="worker.result.size" value="10" /><!-- 结果处理线程数 -->
+    <property key="worker.result.limit" value="0" />
+    <property key="worker.result.handler" value="test.MyResultHandler" /><!-- 自定义结果回调处理类 -->
+    <property key="queue.store.path" value="store" /><!-- 存储文件的路径 -->
+    <property key="queue.zbus.enabled" value="0" /><!-- 是否使用ZBus队列，单机版暂时不使用，貌似性能还有问题 -->
+    <property key="queue.zbus.broker" value="10.8.60.8:15555" /><!-- ZBus服务地址,三种模式：1.jvm(本地模式) 2.ip:port(single模式) 3.[ip:port,ip:port](ha模式) -->
+    <property key="queue.other.names" value="SPIDERMAN_JSON_RESULT" /><!-- 注册创建其他队列备用 -->
+    <!-- <seed>URL地址</seed> --><!-- 写死种子入口的方式 -->
+    <script bindings="net.kernal.spiderman.Bootstrap$Bindings"><!-- 使用脚本动态创建方式 -->
+    <![CDATA[
+    	var K = Java.type("net.kernal.spiderman.kit.K");
+    	var kws = K.readLine("keywords.txt");
+    	for (var i = 0; i < kws.length; i++) {
+    		var kw = kws[i].trim();
+    	    var ekw = K.urlEncode(kw);
+	        $seeds.add(kw+"-baidu", "http://www.baidu.com/s?wd=" + ekw);
+	        $seeds.add(kw+"-baidu-news", "http://news.baidu.com/ns?word=" + ekw);
+	        $seeds.add(kw+"-baidu-zhidao", "http://zhidao.baidu.com/search?word=" + ekw);
+	    }
+	]]>
+    </script>
+    
+    <!-- 页面抽取规则 -->
+    <extract>
+    	<!-- 注册解析器 -->
+        <extractor name="HtmlCleaner" class="net.kernal.spiderman.worker.extract.extractor.impl.HtmlCleanerExtractor" isDefault="1" />
+        <extractor name="Text" class="net.kernal.spiderman.worker.extract.extractor.impl.TextExtractor" />
+        <!-- 注册过滤器 -->
+        <filter name="MyFilter" class="test.MyFilter" />
+        <!-- 要抽取的页面 -->
+        <page name="网页内容" extractor="Text" isPersisted="1">
+			<url-match-rule type="!contains" value="baidu" />
+		</page>
+		<page name="百度知道内容" isPersisted="1">
+			<url-match-rule type="startsWith" value="http://zhidao.baidu.com/question/" />
+			<model>
+				<field name="title" xpath="//h1[@accuse='qTitle']//span/text()" />
+				<field name="question" xpath="//pre[@class='line mt-5 q-content']/text()" />
+				<field name="answers" xpath="//div[@class='line content']/text()" isArray="1">
+					<filter type="script">$this.replace('分享','').replace('评论','').replace('|','')</filter>
+				</field>
+				<field name="bestAnswer" xpath="//div[@class='wgt-quality mod-shadow']//div[@class='quality-content-detail content']/text()" />
+			</model>
+		</page>
+		<page name="百度网页搜索">
+			<url-match-rule type="regex"><![CDATA[(?=http://www\.baidu\.com/s\?wd\=).[^&]*(&pn\=\d+)?]]></url-match-rule>
+			<model>
+				<field name="详情URl" isForNewTask="1" isArray="1" xpath="//div[@id='content_left']//div[@class='result c-container ']//h3//a[@href]" attr="href" /> 
+				<field name="分页URL" isForNewTask="1" isArray="1" isDistinct="1" filter="MyFilter" xpath="//div[@id='page']//a[@href]" attr="href" />
+			</model>
+		</page>
+		<page name="百度新闻搜索">
+			<url-match-rule type="regex"><![CDATA[http://news\.baidu\.com/ns\?word\=.[^&]*(&pn\=\d+)?]]></url-match-rule>
+			<model>
+				<field name="详情URl" isForNewTask="1" isArray="1" xpath="//div[@id='content_left']//div[@class='result']//h3//a[@href]" attr="href" /> 
+				<field name="分页URL" isForNewTask="1" isArray="1" isDistinct="1" filter="MyFilter" xpath="//p[@id='page']//a[@href]" attr="href" />
+			</model>
+		</page>
+		<page name="百度知道搜索">
+			<url-match-rule type="regex"><![CDATA[http://zhidao\.baidu\.com/search\?word\=.[^&]*(&pn\=\d+)?]]></url-match-rule>
+			<model>
+				<field name="详情URl" isForNewTask="1" isArray="1" xpath="//div[@class='list']//dl//dt//a[@href]" attr="href" /> 
+				<field name="分页URL" isForNewTask="1" isArray="1" isDistinct="1" filter="MyFilter" xpath="//div[@class='pager']//a[@href]" attr="href" />
+			</model>
+		</page>
+	</extract>
+</spiderman>

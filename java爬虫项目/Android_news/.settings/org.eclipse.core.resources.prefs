@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//conf/conf.properties=GBK
+encoding//conf/log4j.properties=GBK
+encoding//conf/proxool.xml=UTF-8
+encoding//src/main/java/com/wb/Thread/EveryDayNewsApp_thread_Main.java=UTF-8
+encoding//src/main/java/com/wb/task/EveryDayNewsApp.java=UTF-8
+encoding//src/main/java/com/wb/task/MaoPuNewsApp.java=UTF-8
+encoding//src/main/java/com/wb/util/ChangeCharset.java=UTF-8
+encoding//src/main/java/com/wb/util/JsoupClient.java=UTF-8
+encoding//src/main/java/com/wb/util/Test.java=UTF-8
+encoding//src/main/java/com/wb/util/TestRegex.java=UTF-8
+encoding/<project>=UTF-8

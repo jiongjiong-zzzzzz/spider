@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman name="测试">
+    <property key="duration" value="0" /><!-- 运行时间 0 表示永久，可以给 {n}s {n}m {n}h {n}d -->
+    <property key="scheduler.period" value="10s" /><!-- 调度间隔时间 -->
+    <property key="logger.level" value="INFO" /><!-- 日志级别 INFO DEBUG WARN ERROR OFF -->
+    
+    <property key="worker.download.enabled" value="1" /><!-- 是否开启下载工人 -->
+    <property key="worker.extract.enabled" value="1" /><!-- 是否开启解析工人 -->
+    <property key="worker.result.enabled" value="1" /><!-- 是否开启结果处理工人 -->
+    
+    <property key="worker.download.size" value="1" /><!-- 下载线程数 -->
+    <property key="worker.extract.size" value="1" /><!-- 页面抽取线程数 -->
+    <property key="worker.result.size" value="1" /><!-- 结果处理线程数 -->
+    <property key="worker.result.handler" value="net.kernal.spiderman.worker.result.handler.impl.ConsoleResultHandler" />
+    <property key="queue.store.path" value="store" /><!-- 检查器需要用到BDb存储 -->
+    <seed url="http://localhost:1989/items" /><!-- 写死种子入口的方式 -->
+    <extract><!-- 页面抽取规则 -->
+        <extractor name="Text" class="net.kernal.spiderman.worker.extract.extractor.impl.TextExtractor" /><!-- 正文抽取器,默认 -->
+        <extractor name="Links" class="net.kernal.spiderman.worker.extract.extractor.impl.LinksExtractor" /><!-- 链接抽取器 -->
+        <page name="内容页" isPersisted="1" extractor="Text"><!-- 此处不配置extractor也行，因为Text抽取器是默认的 -->
+			<url-match-rule type="startsWith" value="http://localhost:1989/items/" />
+		</page>
+		<page name="列表页" extractor="Links">
+			<url-match-rule type="equals">http://localhost:1989/items</url-match-rule>
+		</page>
+	</extract>
+</spiderman>

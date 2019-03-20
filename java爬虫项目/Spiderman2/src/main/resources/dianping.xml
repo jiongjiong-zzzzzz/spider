@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman name="点评网">
+    <property key="duration" value="0" /><!-- 运行时间 0 表示永久，可以给 {n}s {n}m {n}h {n}d -->
+    <property key="scheduler.period" value="30s" /><!-- 调度间隔时间 -->
+    <property key="logger.level" value="INFO" /><!-- 日志级别 INFO DEBUG WARN ERROR OFF -->
+    <!--property key="downloader.proxy" value="172.20.0.1:8086" /--><!-- 代理 -->
+    <property key="worker.download.delay" value="100" />  <!-- 下载延迟，免得被封 -->
+    
+    <property key="worker.download.enabled" value="1" /><!-- 是否开启下载工人 -->
+    <property key="worker.extract.enabled" value="1" /><!-- 是否开启解析工人 -->
+    <property key="worker.result.enabled" value="1" /><!-- 是否开启结果处理工人 -->
+    
+    <property key="worker.download.size" value="1" /><!-- 下载线程数 -->
+    <property key="worker.extract.size" value="1" /><!-- 页面抽取线程数 -->
+    <property key="worker.result.size" value="1" /><!-- 结果处理线程数 -->
+    <property key="worker.result.limit" value="0" />
+    <property key="worker.result.handler" value="net.kernal.spiderman.worker.result.handler.impl.ConsoleResultHandler" />
+    <property key="queue.store.path" value="store" /><!-- 存储文件的路径 -->
+    <property key="queue.zbus.enabled" value="0" /><!-- 分布式采集时要开启 -->
+    <property key="queue.zbus.broker" value="jvm" /><!-- ZBus服务地址,三种模式：1.jvm(本地模式) 2.ip:port(single模式) 3.[ip:port,ip:port](ha模式) -->
+    <seed url="http://www.dianping.com/search/category/1/10/g110" />
+    <extract><!-- 页面抽取规则 -->
+        <extractor name="Html" class="net.kernal.spiderman.worker.extract.extractor.impl.HtmlCleanerExtractor" /><!-- Html抽取器 -->
+        <extractor name="Links" class="net.kernal.spiderman.worker.extract.extractor.impl.LinksExtractor" /><!-- 链接抽取器 -->
+		<page name="links" extractor="Html">
+			<url-match-rule type="equals">http://www.dianping.com/search/category/1/10/g110</url-match-rule>
+			<model name="详情页链接">
+				<field name="url" xpath="//div[@id='shop-all-list']//ul//li[1]//div[@class='tit']/a[@data-hippo-type='shop']" attr="href" isForNewTask="1"/>
+			</model>
+		</page>
+		<page name="详情页" extractor="Html" isPersisted="0">
+			<url-match-rule type="equals" value="http://www.dianping.com/shop/9964442" />
+			<model name="店铺信息">
+				<field name="店名" xpath="//h1[@class='shop-name']/text()" />
+				<field name="地址" xpath="//div[@class='expand-info address']/text()" />
+			</model>
+		</page>
+	</extract>
+</spiderman>

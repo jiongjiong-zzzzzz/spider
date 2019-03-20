@@ -1,0 +1,401 @@
+2018-11-13 10:21:21 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10640166236.html
+2018-11-13 10:21:22 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10642381574.html
+2018-11-13 10:32:01 [main] [org.apache.curator.framework.imps.CuratorFrameworkImpl] [ERROR] - Background exception was not retry-able or retry gave up
+java.net.UnknownHostException: djt1
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider.<init>(StaticHostProvider.java:61)
+	at org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:445)
+	at org.apache.curator.utils.DefaultZookeeperFactory.newZooKeeper(DefaultZookeeperFactory.java:29)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$2.newZooKeeper(CuratorFrameworkImpl.java:146)
+	at org.apache.curator.HandleHolder$1.getZooKeeper(HandleHolder.java:94)
+	at org.apache.curator.HandleHolder.getZooKeeper(HandleHolder.java:55)
+	at org.apache.curator.ConnectionState.reset(ConnectionState.java:218)
+	at org.apache.curator.ConnectionState.start(ConnectionState.java:102)
+	at org.apache.curator.CuratorZookeeperClient.start(CuratorZookeeperClient.java:189)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:248)
+	at cn.xpleaf.spider.test13.<init>(test13.java:29)
+	at cn.xpleaf.spider.test13.main(test13.java:83)
+2018-11-13 10:32:43 [main] [org.apache.curator.framework.imps.CuratorFrameworkImpl] [ERROR] - Background exception was not retry-able or retry gave up
+java.net.UnknownHostException: djt1
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider.<init>(StaticHostProvider.java:61)
+	at org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:445)
+	at org.apache.curator.utils.DefaultZookeeperFactory.newZooKeeper(DefaultZookeeperFactory.java:29)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$2.newZooKeeper(CuratorFrameworkImpl.java:146)
+	at org.apache.curator.HandleHolder$1.getZooKeeper(HandleHolder.java:94)
+	at org.apache.curator.HandleHolder.getZooKeeper(HandleHolder.java:55)
+	at org.apache.curator.ConnectionState.reset(ConnectionState.java:218)
+	at org.apache.curator.ConnectionState.start(ConnectionState.java:102)
+	at org.apache.curator.CuratorZookeeperClient.start(CuratorZookeeperClient.java:189)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:248)
+	at cn.xpleaf.spider.test13.<init>(test13.java:29)
+	at cn.xpleaf.spider.test13.main(test13.java:83)
+2018-11-13 10:42:09 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (3000) / elapsed (3631)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at cn.xpleaf.spider.test13.<init>(test13.java:33)
+	at cn.xpleaf.spider.test13.main(test13.java:83)
+2018-11-13 11:00:48 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (3000) / elapsed (3675)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at cn.xpleaf.spider.test13.<init>(test13.java:33)
+	at cn.xpleaf.spider.test13.main(test13.java:83)
+2018-11-13 11:01:02 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (3000) / elapsed (4900)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at cn.xpleaf.spider.test13.<init>(test13.java:33)
+	at cn.xpleaf.spider.test13.main(test13.java:83)
+2018-11-13 11:09:21 [main] [org.apache.curator.framework.imps.CuratorFrameworkImpl] [ERROR] - Background exception was not retry-able or retry gave up
+java.net.UnknownHostException: uplooking01
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider.<init>(StaticHostProvider.java:61)
+	at org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:445)
+	at org.apache.curator.utils.DefaultZookeeperFactory.newZooKeeper(DefaultZookeeperFactory.java:29)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$2.newZooKeeper(CuratorFrameworkImpl.java:146)
+	at org.apache.curator.HandleHolder$1.getZooKeeper(HandleHolder.java:94)
+	at org.apache.curator.HandleHolder.getZooKeeper(HandleHolder.java:55)
+	at org.apache.curator.ConnectionState.reset(ConnectionState.java:218)
+	at org.apache.curator.ConnectionState.start(ConnectionState.java:102)
+	at org.apache.curator.CuratorZookeeperClient.start(CuratorZookeeperClient.java:189)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.start(CuratorFrameworkImpl.java:248)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:98)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:116)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:09:58 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (uplooking01:2181,uplooking02:2181,uplooking03:2181) and timeout (15000) / elapsed (39313)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:103)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:116)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:11:31 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (15000) / elapsed (21402)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:104)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:117)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:11:47 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (15000) / elapsed (37471)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:104)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:117)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:12:05 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (15000) / elapsed (55491)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:104)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:117)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:13:23 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10640166236.html
+2018-11-13 11:13:23 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10569598902.html
+2018-11-13 11:13:25 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10642381574.html
+2018-11-13 11:13:27 [pool-3-thread-4] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=2&sort=sort_rank_asc&trans=1&JL=6_0_0出错，代理信息：null:null，
+2018-11-13 11:13:31 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10561417981.html
+2018-11-13 11:13:37 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10569598902.html
+2018-11-13 11:13:39 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10640166236.html
+2018-11-13 11:13:39 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10642381574.html
+2018-11-13 11:13:41 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10561417981.html
+2018-11-13 11:13:43 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649857.html
+2018-11-13 11:13:44 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10672305554.html
+2018-11-13 11:13:45 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0070142956/10574044639.html
+2018-11-13 11:13:47 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0070160971/10607807512.html
+2018-11-13 11:13:48 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10398812072.html
+2018-11-13 11:13:49 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (15000) / elapsed (15726)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:104)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:117)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:13:50 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10624079182.html
+2018-11-13 11:13:51 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10587461183.html
+2018-11-13 11:13:55 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10543339838.html
+2018-11-13 11:13:55 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10573586718.html
+2018-11-13 11:13:58 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10639385789.html
+2018-11-13 11:13:59 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10639385782.html
+2018-11-13 11:14:00 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10554485359.html
+2018-11-13 11:14:01 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10568571291.html
+2018-11-13 11:14:04 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10638773027.html
+2018-11-13 11:14:04 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10398811924.html
+2018-11-13 11:14:05 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (15000) / elapsed (31751)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:104)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:117)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:14:05 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10511677182.html
+2018-11-13 11:14:07 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10557621244.html
+2018-11-13 11:14:09 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649860.html
+2018-11-13 11:14:11 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10597918588.html
+2018-11-13 11:14:12 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10629204011.html
+2018-11-13 11:14:14 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10620549039.html
+2018-11-13 11:14:15 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10587464555.html
+2018-11-13 11:14:16 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10583860322.html
+2018-11-13 11:14:16 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649862.html
+2018-11-13 11:14:23 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (15000) / elapsed (49769)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:104)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:117)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:18:14 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (127.0.0.1:2181) and timeout (15000) / elapsed (15664)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:104)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:117)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:18:30 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (127.0.0.1:2181) and timeout (15000) / elapsed (31700)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:691)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:675)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:672)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:453)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:443)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at cn.xpleaf.spider.ISpider.registerZK(ISpider.java:104)
+	at cn.xpleaf.spider.ISpider.start(ISpider.java:117)
+	at cn.xpleaf.spider.StartISpider.main(StartISpider.java:55)
+2018-11-13 11:18:57 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (127.0.0.1:2181) and timeout (15000) / elapsed (15627)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at cn.xpleaf.spider.monitor.SpiderMonitorTask.<init>(SpiderMonitorTask.java:50)
+	at cn.xpleaf.spider.monitor.SpiderMonitorTask.main(SpiderMonitorTask.java:92)
+2018-11-13 11:19:13 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (127.0.0.1:2181) and timeout (15000) / elapsed (31652)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at cn.xpleaf.spider.monitor.SpiderMonitorTask.<init>(SpiderMonitorTask.java:50)
+	at cn.xpleaf.spider.monitor.SpiderMonitorTask.main(SpiderMonitorTask.java:92)
+2018-11-13 11:21:48 [main] [org.apache.curator.ConnectionState] [ERROR] - Connection timed out for connection string (192.168.20.10:2181) and timeout (15000) / elapsed (15590)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38)
+	at cn.xpleaf.spider.monitor.SpiderMonitorTask.<init>(SpiderMonitorTask.java:50)
+	at cn.xpleaf.spider.monitor.SpiderMonitorTask.main(SpiderMonitorTask.java:92)
+2018-11-13 13:17:19 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10561417981.html
+2018-11-13 13:17:19 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10642381574.html
+2018-11-13 13:17:19 [pool-3-thread-2] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10640166236.html
+2018-11-13 13:17:19 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10672305554.html
+2018-11-13 13:17:19 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10569598902.html
+2018-11-13 13:17:19 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649857.html
+2018-11-13 13:17:23 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0070142956/10574044639.html
+2018-11-13 13:17:24 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10398812072.html
+2018-11-13 13:17:24 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0070160971/10607807512.html
+2018-11-13 13:17:26 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10624079182.html
+2018-11-13 13:17:26 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10587461183.html
+2018-11-13 13:17:27 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10543339838.html
+2018-11-13 13:17:29 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10573586718.html
+2018-11-13 13:17:30 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10639385789.html
+2018-11-13 13:17:34 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10639385782.html
+2018-11-13 13:17:34 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10554485359.html
+2018-11-13 13:17:37 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10568571291.html
+2018-11-13 13:17:38 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10398811924.html
+2018-11-13 13:17:40 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10638773027.html
+2018-11-13 13:17:40 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10511677182.html
+2018-11-13 13:17:41 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10557621244.html
+2018-11-13 13:17:44 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649860.html
+2018-11-13 13:17:45 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10597918588.html
+2018-11-13 13:17:46 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10629204011.html
+2018-11-13 13:17:47 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10620549039.html
+2018-11-13 13:17:48 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10587464555.html
+2018-11-13 13:17:49 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10583860322.html
+2018-11-13 13:17:49 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649862.html
+2018-11-13 13:19:23 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=66&sort=sort_rank_asc&trans=1&JL=6_0_0出错，代理信息：null:null，
+2018-11-13 13:21:12 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10640166236.html
+2018-11-13 13:21:12 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10561417981.html
+2018-11-13 13:21:13 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10569598902.html
+2018-11-13 13:21:13 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10642381574.html
+2018-11-13 13:21:13 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649857.html
+2018-11-13 13:21:14 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0070142956/10574044639.html
+2018-11-13 13:21:14 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0070160971/10607807512.html
+2018-11-13 13:21:15 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10398812072.html
+2018-11-13 13:21:15 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10672305554.html
+2018-11-13 13:21:15 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10624079182.html
+2018-11-13 13:21:15 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10587461183.html
+2018-11-13 13:21:16 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10543339838.html
+2018-11-13 13:21:17 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10573586718.html
+2018-11-13 13:21:17 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10639385789.html
+2018-11-13 13:21:18 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10639385782.html
+2018-11-13 13:21:18 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10554485359.html
+2018-11-13 13:21:19 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10568571291.html
+2018-11-13 13:21:19 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10398811924.html
+2018-11-13 13:21:19 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10638773027.html
+2018-11-13 13:21:21 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10511677182.html
+2018-11-13 13:21:22 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10557621244.html
+2018-11-13 13:21:23 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649860.html
+2018-11-13 13:21:23 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10597918588.html
+2018-11-13 13:21:24 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10629204011.html
+2018-11-13 13:21:24 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10620549039.html
+2018-11-13 13:21:25 [pool-3-thread-3] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10587464555.html
+2018-11-13 13:21:26 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649862.html
+2018-11-13 13:21:26 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10583860322.html
+2018-11-13 13:21:42 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=27&sort=sort_rank_asc&trans=1&JL=6_0_0出错，代理信息：null:null，
+2018-11-13 13:22:00 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=32&sort=sort_rank_asc&trans=1&JL=6_0_0出错，代理信息：null:null，
+2018-11-13 13:22:06 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=32&sort=sort_rank_asc&trans=1&JL=6_0_0出错，代理信息：null:null，
+2018-11-13 13:22:12 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=32&sort=sort_rank_asc&trans=1&JL=6_0_0出错，代理信息：null:null，
+2018-11-13 13:22:20 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=32&sort=sort_rank_asc&trans=1&JL=6_0_0出错，代理信息：null:null，
+2018-11-13 13:22:34 [pool-3-thread-5] [cn.xpleaf.spider.utils.HttpUtil] [ERROR] - 下载网页：https://list.jd.com/list.html?cat=9987,653,655&page=33&sort=sort_rank_asc&trans=1&JL=6_0_0出错，代理信息：null:null，
+2018-11-22 18:14:34 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10642381574.html
+2018-11-22 18:14:34 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10561417981.html
+2018-11-22 18:14:34 [pool-3-thread-4] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10657019238.html
+2018-11-22 18:14:35 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10606649857.html
+2018-11-22 18:14:37 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10672305554.html
+2018-11-22 18:14:37 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0070517287/10693730457.html
+2018-11-22 18:14:38 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10398812072.html
+2018-11-22 18:14:40 [main] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10624079182.html
+2018-11-22 18:14:40 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10587461183.html
+2018-11-22 18:14:42 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10543339838.html
+2018-11-22 18:14:42 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10573586718.html
+2018-11-22 18:14:43 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10639385789.html
+2018-11-22 18:14:44 [pool-3-thread-1] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10639385782.html
+2018-11-22 18:14:47 [pool-3-thread-5] [cn.xpleaf.spider.core.parser.Impl.SNHtmlParserImpl] [ERROR] - 获取商品价格错误，商品url为: https://product.suning.com/0000000000/10554485359.html

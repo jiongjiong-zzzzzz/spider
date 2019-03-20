@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderman name="单篇分页">
+    <property key="duration" value="30s" /><!-- 运行时间 0 表示永久，可以给 {n}s {n}m {n}h {n}d -->
+    <property key="scheduler.period" value="60s" /><!-- 调度间隔时间 -->
+    <property key="logger.level" value="INFO" /><!-- 日志级别 INFO DEBUG WARN ERROR OFF -->
+    <!--property key="downloader.proxy" value="172.20.0.1:8086" /--><!-- 代理 -->
+    
+    <property key="worker.download.enabled" value="1" /><!-- 是否开启下载工人 -->
+    <property key="worker.extract.enabled" value="1" /><!-- 是否开启解析工人 -->
+    <property key="worker.result.enabled" value="1" /><!-- 是否开启结果处理工人 -->
+    
+    <property key="worker.download.size" value="1" /><!-- 下载线程数 -->
+    <property key="worker.extract.size" value="1" /><!-- 页面抽取线程数 -->
+    <property key="worker.result.size" value="1" /><!-- 结果处理线程数 -->
+    <property key="worker.result.limit" value="0" />
+    <property key="worker.result.handler" value="net.kernal.spiderman.worker.result.handler.impl.ConsoleResultHandler" />
+    <property key="queue.store.path" value="store" /><!-- 存储文件的路径 -->
+    <property key="queue.zbus.enabled" value="0" /><!-- 分布式采集时要开启 -->
+    <property key="queue.zbus.broker" value="jvm" /><!-- ZBus服务地址,三种模式：1.jvm(本地模式) 2.ip:port(single模式) 3.[ip:port,ip:port](ha模式) -->
+    <seed url="http://travel.163.com/14/0313/17/9N8002ON00063KE8.html" />
+    <extract><!-- 页面抽取规则 -->
+        <extractor name="Html" class="net.kernal.spiderman.worker.extract.extractor.impl.HtmlCleanerExtractor" /><!-- Html抽取器 -->
+        <extractor name="Links" class="net.kernal.spiderman.worker.extract.extractor.impl.LinksExtractor" /><!-- 链接抽取器 -->
+		<page name="详情页" isPersisted="1" extractor="Html">
+			<url-match-rule type="regex" value=".*" />
+			<model fieldNameForNextPageUrl="next" fieldNameForNextPageContent="content">
+				<field name="next" xpath="//div[@class='ep-pages']//a[@class='ep-pages-ctrl']" attr="href" /><!-- 下一页 -->
+				<field name="title" xpath="//title/text()" /><!-- 文章标题 -->
+				<field name="intro" xpath="//p[@class='ep-summary']/text()" /><!-- 文章简介 -->
+				<field name="content" xpath="(//div[@id='endText'])[1]/text()" /><!-- 文章内容 -->
+			</model>
+		</page>
+	</extract>
+</spiderman>
