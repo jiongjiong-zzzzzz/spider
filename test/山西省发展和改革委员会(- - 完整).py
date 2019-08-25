@@ -8,19 +8,19 @@ def get_time(format_date,time_pull = None):
 def standard_work_list():
     return_data = []
     headers = {'User-Agent': UserAgent}
-    res = requests.get('http://samr.saic.gov.cn/xw/zj/', headers=headers)
+    res = requests.get('http://fgw.shanxi.gov.cn/xwfb/fgyw/', headers=headers)
     res.raise_for_status()
-    reg_content = res.content.decode('utf-8')
+    reg_content = res.content.decode('utf-8','ignore')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='Three_zhnlist_02').findAll('a')
+    infos = html_page.select('ul.submenu-dropbox_subtabs_content.fixmt10 li a')
     for one_info in infos:
         _one_info = str(one_info)
         content_dir = one_info
         if content_dir:
             _datetime = 0
-            _url_tmp = content_dir['href'].strip().replace('./','http://samr.saic.gov.cn/xw/zj/')
-            print({'url': _url_tmp, 'title': content_dir['title'].strip()})
-            return_data.append({'url': _url_tmp, 'title': content_dir['title'].strip(), 'datetime': _datetime})
+            _url_tmp = content_dir['href'].replace('../../','http://fgw.shanxi.gov.cn/').strip()
+            print({'url': _url_tmp, 'title': content_dir.text.strip()})
+            return_data.append({'url': _url_tmp, 'title': content_dir.text.strip(), 'datetime': _datetime})
     return return_data
 
 
@@ -32,6 +32,8 @@ def standard_work_article(target_url):
     reg_content = res.content.decode('utf-8','ignore')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
     infos = html_page.find(class_='TRS_Editor').findAll('p')
+    if not infos:
+        return
     for one_info in infos:
         content_dir = re.search('<p[\\s\\S]+/p>', str(one_info))
         if content_dir:
@@ -44,9 +46,14 @@ def standard_work_article(target_url):
         if not need_content.strip():
             continue
         return_data.append(need_content.strip())
-    tim = re.search(r"(\d{4}-\d{1,2}-\d{1,2}\s\d{1,2}:\d{1,2})", reg_content)
-    datetime_dir = re.match('(?P<year>\d{4})-(?P<month>\d+?)-(?P<day>\d+?) (?P<hour>\d+?):(?P<minute>\d+)',
+    try:
+        tim = re.search(r"(\d{4}/\d{1,2}/\d{1,2}\s\d{1,2}:\d{1,2})", reg_content)
+        datetime_dir = re.match('(?P<year>\d{4})/(?P<month>\d+?)/(?P<day>\d+?) (?P<hour>\d+?):(?P<minute>\d+)',
                             tim[0])
+    except:
+        tim = re.search(r"(\d{4}-\d{1,2}-\d{1,2}\s\d{1,2}:\d{1,2})", reg_content)
+        datetime_dir = re.match('(?P<year>\d{4})-(?P<month>\d+?)-(?P<day>\d+?) (?P<hour>\d+?):(?P<minute>\d+)',
+                                tim[0])
     tt_tmp = '%s-%s-%s %s:%s' % (
     datetime_dir['year'], datetime_dir['month'], datetime_dir['day'], datetime_dir['hour'], datetime_dir['minute'])
     _datetime = 0

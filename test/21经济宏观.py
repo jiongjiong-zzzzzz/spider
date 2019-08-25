@@ -28,7 +28,7 @@ def standard_work_article(target_url):
     res.raise_for_status()
     reg_content = res.content.decode('utf8')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='detailCont').findAll('p')
+    infos = html_page.find(class_='td-post-content').findAll('p')
     for one_info in infos:
         content_dir = re.search('<p[\\s\\S]+/p>', str(one_info))
         if content_dir:

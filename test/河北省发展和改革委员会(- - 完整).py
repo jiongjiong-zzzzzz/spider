@@ -8,19 +8,21 @@ def get_time(format_date,time_pull = None):
 def standard_work_list():
     return_data = []
     headers = {'User-Agent': UserAgent}
-    res = requests.get('http://samr.saic.gov.cn/xw/zj/', headers=headers)
+    res = requests.get('http://hbdrc.hebei.gov.cn/web/web/t.xhtml?template=ej_gzdtlist2018', headers=headers)
     res.raise_for_status()
     reg_content = res.content.decode('utf-8')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='Three_zhnlist_02').findAll('a')
+    infos = html_page.find(class_='ej_list ').findAll('a')
     for one_info in infos:
         _one_info = str(one_info)
+        if 'target' not in _one_info:
+            continue
         content_dir = one_info
         if content_dir:
             _datetime = 0
-            _url_tmp = content_dir['href'].strip().replace('./','http://samr.saic.gov.cn/xw/zj/')
-            print({'url': _url_tmp, 'title': content_dir['title'].strip()})
-            return_data.append({'url': _url_tmp, 'title': content_dir['title'].strip(), 'datetime': _datetime})
+            _url_tmp = 'http://hbdrc.hebei.gov.cn'+content_dir['href'].strip()
+            print({'url': _url_tmp, 'title': content_dir.text.strip()})
+            return_data.append({'url': _url_tmp, 'title': content_dir.text.strip(), 'datetime': _datetime})
     return return_data
 
 
@@ -31,7 +33,7 @@ def standard_work_article(target_url):
     res.raise_for_status()
     reg_content = res.content.decode('utf-8','ignore')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='TRS_Editor').findAll('p')
+    infos = html_page.find(class_='con_nr').findAll('p')
     for one_info in infos:
         content_dir = re.search('<p[\\s\\S]+/p>', str(one_info))
         if content_dir:
@@ -44,6 +46,8 @@ def standard_work_article(target_url):
         if not need_content.strip():
             continue
         return_data.append(need_content.strip())
+    if not infos:
+        return_data.append(html_page.find(class_='txt_txt').text)
     tim = re.search(r"(\d{4}-\d{1,2}-\d{1,2}\s\d{1,2}:\d{1,2})", reg_content)
     datetime_dir = re.match('(?P<year>\d{4})-(?P<month>\d+?)-(?P<day>\d+?) (?P<hour>\d+?):(?P<minute>\d+)',
                             tim[0])
@@ -52,7 +56,7 @@ def standard_work_article(target_url):
     _datetime = 0
     if datetime_dir:
         _datetime = get_time('%Y-%m-%d %H:%M', tt_tmp)
-    _title = html_page.find('title').text
+    _title = html_page.find(class_='con_main').text.replace('\n','').replace('\t','')
     return _datetime, '%s<replace title>%s' % (_title, '\n'.join(return_data))
 
 def main():

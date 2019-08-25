@@ -1,4 +1,4 @@
-#encoding=utf-8
+ #encoding=utf-8
 import requests,re,bs4,time,sys,hashlib,uuid,time,json,base64,rsa,platform,datetime,os,urllib
 
 UserAgent = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
@@ -8,19 +8,26 @@ def get_time(format_date,time_pull = None):
 def standard_work_list():
     return_data = []
     headers = {'User-Agent': UserAgent}
-    res = requests.get('http://samr.saic.gov.cn/xw/zj/', headers=headers)
+    res = requests.get('http://zrzy.jl.gov.cn/xwzx/', headers=headers)
     res.raise_for_status()
-    reg_content = res.content.decode('utf-8')
+    reg_content = res.content.decode('utf-8','ignore')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='Three_zhnlist_02').findAll('a')
+    infos = html_page.select('.bxm_tzgg_top a')
     for one_info in infos:
         _one_info = str(one_info)
+        if 'html' not in _one_info  or 'http'  in _one_info:
+            continue
         content_dir = one_info
         if content_dir:
             _datetime = 0
-            _url_tmp = content_dir['href'].strip().replace('./','http://samr.saic.gov.cn/xw/zj/')
-            print({'url': _url_tmp, 'title': content_dir['title'].strip()})
-            return_data.append({'url': _url_tmp, 'title': content_dir['title'].strip(), 'datetime': _datetime})
+            _url_tmp = content_dir['href']
+            if '../../' in _url_tmp:
+                _url_tmp = _url_tmp.replace('../../', 'http://jldrc.jl.gov.cn/')
+            _url_tmp = _url_tmp.replace('./','http://zrzy.jl.gov.cn/xwzx/')
+            if not content_dir.text.strip():
+                continue
+            print({'url': _url_tmp, 'title': content_dir.text.strip()})
+            return_data.append({'url': _url_tmp, 'title': content_dir.text, 'datetime': _datetime})
     return return_data
 
 
@@ -31,7 +38,12 @@ def standard_work_article(target_url):
     res.raise_for_status()
     reg_content = res.content.decode('utf-8','ignore')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='TRS_Editor').findAll('p')
+    try:
+        infos = html_page.find(class_='TRS_Editor').findAll('p')
+    except:
+        return
+    if not infos:
+        return
     for one_info in infos:
         content_dir = re.search('<p[\\s\\S]+/p>', str(one_info))
         if content_dir:
@@ -44,15 +56,18 @@ def standard_work_article(target_url):
         if not need_content.strip():
             continue
         return_data.append(need_content.strip())
-    tim = re.search(r"(\d{4}-\d{1,2}-\d{1,2}\s\d{1,2}:\d{1,2})", reg_content)
-    datetime_dir = re.match('(?P<year>\d{4})-(?P<month>\d+?)-(?P<day>\d+?) (?P<hour>\d+?):(?P<minute>\d+)',
-                            tim[0])
-    tt_tmp = '%s-%s-%s %s:%s' % (
-    datetime_dir['year'], datetime_dir['month'], datetime_dir['day'], datetime_dir['hour'], datetime_dir['minute'])
+    date = re.search(r"(\d{4}-\d{1,2}-\d{1,2})", reg_content)
+    datetime_dir = re.match('(?P<year>\d{4})-(?P<month>\d+?)-(?P<day>\d+)',
+                            date[0])
+    tt_tmp = '%s-%s-%s' % (
+        datetime_dir['year'], datetime_dir['month'], datetime_dir['day'])
+
     _datetime = 0
     if datetime_dir:
-        _datetime = get_time('%Y-%m-%d %H:%M', tt_tmp)
+        _datetime = get_time('%Y-%m-%d', tt_tmp)
     _title = html_page.find('title').text
+    #_title = re.findall(r'<div class="three-page-title" style="color:#123d89!important;">(.+?)</div>', reg_content)
+
     return _datetime, '%s<replace title>%s' % (_title, '\n'.join(return_data))
 
 def main():

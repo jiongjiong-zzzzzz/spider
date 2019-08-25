@@ -8,19 +8,19 @@ def get_time(format_date,time_pull = None):
 def standard_work_list():
     return_data = []
     headers = {'User-Agent': UserAgent}
-    res = requests.get('http://samr.saic.gov.cn/xw/zj/', headers=headers)
+    res = requests.get('http://www.ggj.gov.cn/xwzx/ggjxw/', headers=headers)
     res.raise_for_status()
     reg_content = res.content.decode('utf-8')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='Three_zhnlist_02').findAll('a')
+    infos = html_page.find(class_='list').findAll('a')
     for one_info in infos:
         _one_info = str(one_info)
         content_dir = one_info
         if content_dir:
             _datetime = 0
-            _url_tmp = content_dir['href'].strip().replace('./','http://samr.saic.gov.cn/xw/zj/')
-            print({'url': _url_tmp, 'title': content_dir['title'].strip()})
-            return_data.append({'url': _url_tmp, 'title': content_dir['title'].strip(), 'datetime': _datetime})
+            _url_tmp = 'http://www.zytzb.gov.cn'+content_dir['href'].strip()
+            print({'url': _url_tmp, 'title': content_dir.text.strip()})
+            return_data.append({'url': _url_tmp, 'title': content_dir.text.strip(), 'datetime': _datetime})
     return return_data
 
 
@@ -31,7 +31,7 @@ def standard_work_article(target_url):
     res.raise_for_status()
     reg_content = res.content.decode('utf-8','ignore')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='TRS_Editor').findAll('p')
+    infos = html_page.find(class_='text_content').findAll('p')
     for one_info in infos:
         content_dir = re.search('<p[\\s\\S]+/p>', str(one_info))
         if content_dir:
@@ -44,6 +44,8 @@ def standard_work_article(target_url):
         if not need_content.strip():
             continue
         return_data.append(need_content.strip())
+    if not return_data:
+        return_data.append(html_page.find(class_='TRS_Editor').text)
     tim = re.search(r"(\d{4}-\d{1,2}-\d{1,2}\s\d{1,2}:\d{1,2})", reg_content)
     datetime_dir = re.match('(?P<year>\d{4})-(?P<month>\d+?)-(?P<day>\d+?) (?P<hour>\d+?):(?P<minute>\d+)',
                             tim[0])

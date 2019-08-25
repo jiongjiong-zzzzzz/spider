@@ -7,18 +7,21 @@ def get_time(format_date,time_pull = None):
         return int(time.mktime(time.strptime(time_pull, format_date))*1000)
 def standard_work_list():
     return_data = []
-    headers = {'User-Agent': UserAgent}
-    res = requests.get('http://samr.saic.gov.cn/xw/zj/', headers=headers)
+    headers = {'User-Agent': UserAgent,
+               'cookie': 'wzws_cid=e4710d1353a7cb8ac444ec44ef11ec09a1a5af35808325cda7efda3e51b23498e799a3d1a885e23e5f4f48183c132543cbe5c1a08b1d75cf24317f13dcc7a0ea',
+               'Referer': 'http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html',
+               }
+    res = requests.get('http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html', headers=headers)
     res.raise_for_status()
     reg_content = res.content.decode('utf-8')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='Three_zhnlist_02').findAll('a')
+    infos = html_page.select('font.newslist_style a')
     for one_info in infos:
         _one_info = str(one_info)
         content_dir = one_info
         if content_dir:
             _datetime = 0
-            _url_tmp = content_dir['href'].strip().replace('./','http://samr.saic.gov.cn/xw/zj/')
+            _url_tmp = 'http://www.pbc.gov.cn'+content_dir['href']
             print({'url': _url_tmp, 'title': content_dir['title'].strip()})
             return_data.append({'url': _url_tmp, 'title': content_dir['title'].strip(), 'datetime': _datetime})
     return return_data
@@ -26,12 +29,14 @@ def standard_work_list():
 
 def standard_work_article(target_url):
     return_data = []
-    headers = {'User-Agent': UserAgent}
+    headers = {'User-Agent': UserAgent,
+               'cookie': 'wzws_cid=e4710d1353a7cb8ac444ec44ef11ec09a1a5af35808325cda7efda3e51b23498e799a3d1a885e23e5f4f48183c132543ecb2b0b53558da45c64b3d9d37d922d6',
+               }
     res = requests.get(target_url, headers=headers)
     res.raise_for_status()
     reg_content = res.content.decode('utf-8','ignore')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='TRS_Editor').findAll('p')
+    infos = html_page.find(id='zoom').findAll('p')
     for one_info in infos:
         content_dir = re.search('<p[\\s\\S]+/p>', str(one_info))
         if content_dir:

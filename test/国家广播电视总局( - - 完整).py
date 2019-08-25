@@ -8,19 +8,18 @@ def get_time(format_date,time_pull = None):
 def standard_work_list():
     return_data = []
     headers = {'User-Agent': UserAgent}
-    res = requests.get('http://samr.saic.gov.cn/xw/zj/', headers=headers)
+    res = requests.get('http://www.nrta.gov.cn/col/col112/index.html', headers=headers)
     res.raise_for_status()
     reg_content = res.content.decode('utf-8')
-    html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='Three_zhnlist_02').findAll('a')
+    infos = re.findall('<div class="f-cb"><a href="(?P<url>.+?)" target="_blank">(?P<title>.+?)</a><span>.+?</span></div>', reg_content)
     for one_info in infos:
         _one_info = str(one_info)
         content_dir = one_info
         if content_dir:
             _datetime = 0
-            _url_tmp = content_dir['href'].strip().replace('./','http://samr.saic.gov.cn/xw/zj/')
-            print({'url': _url_tmp, 'title': content_dir['title'].strip()})
-            return_data.append({'url': _url_tmp, 'title': content_dir['title'].strip(), 'datetime': _datetime})
+            _url_tmp = 'http://www.nrta.gov.cn'+content_dir[0]
+            print({'url': _url_tmp, 'title': content_dir[1].strip()})
+            return_data.append({'url': _url_tmp, 'title': content_dir[1].strip(), 'datetime': _datetime})
     return return_data
 
 
@@ -31,7 +30,7 @@ def standard_work_article(target_url):
     res.raise_for_status()
     reg_content = res.content.decode('utf-8','ignore')
     html_page = bs4.BeautifulSoup(reg_content, 'lxml')
-    infos = html_page.find(class_='TRS_Editor').findAll('p')
+    infos = html_page.find(id='zoom').findAll('p')
     for one_info in infos:
         content_dir = re.search('<p[\\s\\S]+/p>', str(one_info))
         if content_dir:
