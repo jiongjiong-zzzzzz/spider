@@ -3,10 +3,10 @@ from goose3.text import StopWordsChinese
 from Spider.date_re import time_fix
 import re,urllib
 # 初始化，设置中文分词
-g = Goose({'stopwords_class': StopWordsChinese})
+g = Goose()
 # 文章地址
 urls = [
-    'http://www.cnelc.com/text/2/190124/AD100886718_1.html'
+    'https://www.channelnewsasia.com/news/business/shares-knocked-lower-after-new-us-tariff-threat-on-chinese-goods-10727440'
        ]
 for url in urls:
 # 获取文章内容

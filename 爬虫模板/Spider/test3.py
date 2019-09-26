@@ -9,7 +9,7 @@ import re
 t1 = time.time()
 print('#' * 50)
 
-url = "http://www.wikidata.org/w/index.php?title=Special:WhatLinksHere/Q5&limit=500&from=0"
+url = "http://hotel.qunar.com/city/beijing_city/dt-17565/#from=qta"
 # 请求头部
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'}

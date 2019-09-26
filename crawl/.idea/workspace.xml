@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4743efb6-18d8-4595-8d65-e2595d25159d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/一带一路.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/东方中药材网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中共中央党校（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中华人民共和国公安部(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国人民银行(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国农业信息网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国农村行业协会（中文完整）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国医药网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国家电网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国工程院（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国建材网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国房地产信息网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国机构编制网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国机构编织网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国民用航空局.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国气象局（中文完整）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国汽车工业协会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国渔业协会(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国煤炭网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国电力新闻网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国电力网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国畜牧业信息网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国石油石化工程信息网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国科学院（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国经济网（中文完整）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国证券监督管理委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国钢铁工业协会网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国银行保险监督委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国银行保险监督管理委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中国饮料工业协会(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中央统战部（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中房网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/中铝网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/亚洲纺织联盟（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/健康报(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/动脉网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京人民政府(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市交通局(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市人民防空办公室（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市住建委(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市体育局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市侨务管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市公安局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市农业农村厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市发展和改革委员会(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市司法局(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市园林绿化局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市国有资产监督委员会（中文完整）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市地方金融监督管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市审计局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市市场监督管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市广播电视局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市应急管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市教育委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市文化和旅游局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市民政局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市生态环境局(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市科学技术委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市统计局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京市财政局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京监察委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/北京税务局(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林人力资源和社会保障部（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林公安厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林发改委（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林司法厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林工业和信息化厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林教育厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林民政厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林民族事务委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林生态环境厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林省政府（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林科学技术厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林自然资源部（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/吉林财政厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国信房地产信息网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国务院参事局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国务院港澳事务办公室（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家中医药管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家体育总局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家信访局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家医疗保障局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家国防科技工业局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家外汇管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家外汇（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家广播电视总局( - - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家文物局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家机关事务管理局.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家林业和草原局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家烟草专卖局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家煤矿安全局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家知识产权局(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家移民管理局(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家粮食和物资储备局(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家统计局(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家能源局(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家能源网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家药草专卖局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家邮政局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/国家铁路局(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西交通运输厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西人力资源和社会保障部（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西住房和城乡建设厅厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西公安厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西农业农村厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西卫生健康委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西司法厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西商务厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西外事办公室(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西审计厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西工业和信息化厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西应急管理厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西政府(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西教育厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西文化和旅游厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西民政厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西生态环境厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西省发展和改革委员会(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西科学技术厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西自然资源厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西财政厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/山西退役军人事务厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/最高人民法院(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北司法厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北工业和信息化厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省交通运输厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省人力资源和社会保障厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省人民政府(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省住房和城乡建设厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省公安厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省农业农村厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省卫生健康委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省发展和改革委员会(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省商务厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省教育厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省文化和旅游厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省民政厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省民族事务委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省水利厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省生态环境厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省科学技术厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省自然资源厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省财政局(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/河北省退役军人事务厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/环保网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/生物谷(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/盖世汽车网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/盛丰建材网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/纺织中国在线(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/艾肯家电网（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/观点地产网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省交通运输厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省人民防空办公室（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省住房和城乡建设厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省体育局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省公安厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省农业农村厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省医疗保障局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省卫生健康委员会（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省发改委(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省司法厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省商务厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省国有资产监督委员会(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省外事办公室(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省审计厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省工业和信息化厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省市场监督管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省广播电视局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省应急管理厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省扶贫开发办公室（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省政府发展研究中心（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省政府（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省教育厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省文化和旅游厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省机关事务管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省机地方金融监督管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省机大数据发展管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省林业局(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省民政厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省民族宗教事务所（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省水利厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省生态环境厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省生态移民局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省监狱管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省科学技术厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省科学院(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省粮食和物质储备局(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省统计局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省能源局(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省自然资源厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省药品监督管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省财政厅（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵州省退役军人事务厅(中文年月不完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵阳市大数据发展管理局（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/贵阳市省政府（符号 - - ）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/食品伙伴网(- - 完整).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/52111.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/js-cookie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/js.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/js加密cookie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/mysql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/suanfa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/test4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/test5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/test6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/Spider/urlparse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/heibanke/test_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/news/mongodb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/L0iNN.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/huakuai.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/image/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/image/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/image/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/image/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/image/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/image/yzm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/test3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/crawler-font-puzzle-1/woff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/image/img62.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/new 4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/new.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/new_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_13.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_14.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_js1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_xuebi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_xuebi2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_xuebitu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../爬虫模板/test/test_yanzhengma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/21经济宏观.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/21经济宏观.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/国家市场监督管理局(- - 完整).py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/国家市场监督管理局(- - 完整).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../爬虫模板/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../爬虫模板/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/.idea/爬虫模板.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../爬虫模板/.idea/爬虫模板.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/201801.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/2019.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../爬虫模板/Spider/521.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/aaa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/duanzi.json" beforeDir="false" afterPath="$PROJECT_DIR$/../爬虫模板/Spider/async.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/get_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/qiushibaike.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/stock_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../爬虫模板/Spider/test3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/test_goose.py" beforeDir="false" afterPath="$PROJECT_DIR$/../爬虫模板/Spider/test_goose.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/test_weChat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/write.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../爬虫模板/Spider/ezpymysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../爬虫模板/Spider/xici.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="4" />
+    <option name="y" value="17" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="crawl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crawl" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4743efb6-18d8-4595-8d65-e2595d25159d" name="Default Changelist" comment="" />
+      <created>1566538926768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566538926768</updated>
+      <workItem from="1566538930364" duration="485000" />
+      <workItem from="1566539421018" duration="1307000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1566539091389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1566539091389</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1566539228953</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566539228953</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1792000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22707888" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test.py" />
+  </component>
+</project>
