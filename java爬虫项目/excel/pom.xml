@@ -34,7 +34,7 @@
 
             <artifactId>mysql-connector-java</artifactId>
 
-            <version>5.1.22</version>
+            <version>8.0.28</version>
 
         </dependency>
         <!-- 处理excel和上面功能是一样的-->
